@@ -5,16 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tea-house-practice-projects</title>
-
     <!-- daisy and tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- external font class name -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="manrope">
     <!-- header section -->
     <header>
-
+        <!-- nav section -->
+        <nav>
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row lg:flex-row text-center lg:text-left lg:justify-between items-center mt-5">
+                    <div>
+                        <h1 class="text-3xl lg:text-7xl font-extrabold">
+                            It's good <br>
+                            tea time at The <br>
+                            Tea House</h1>
+                        <p class="py-6 font-medium">
+                            Tea and Botanical Solutions Supplier Give Optimum <br>
+                            Satisfaction To Your Taste Buds.</p>
+                        <button class="btn text-white bg-gradient-to-r from-[#FF8938] to-[#F00]">Explore More</button>
+                    </div>
+                    <div class="p-3 lg:p-0">
+                        <img src="/images/banner.png"/>
+                        <div class="absolute -mt-28 ml-12">
+                            <div class="flex p-7 w-72 gap-4 shadow-lg rounded-xl bg-[#FFF]">
+                                <img src="./images/Group 5.png" alt="">
+                                <div>
+                                    <h2 class="text-2xl font-extrabold text-[#1C1C1C]">5.00</h2>
+                                    <p class="font-semibold text-[#777]">Trust Pilot Ratings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
